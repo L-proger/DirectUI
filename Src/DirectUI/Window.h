@@ -119,7 +119,7 @@ private:
 	}
 	
 	HINSTANCE hInst;
-	TCHAR* szWindowClass = TEXT("Window");
+	const TCHAR* szWindowClass = TEXT("Window");
 	HWND hWnd;
 };
 
