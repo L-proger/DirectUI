@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectUI\Controls\UiButton.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiControl.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiCoreWindow.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiHwndCoreWindow.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiLabel.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiNativeWindowBase.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiPanel.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiSwapChainWindow.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiTransform.cpp" />
+    <ClCompile Include="DirectUI\Controls\UiZoomPan.cpp" />
+    <ClCompile Include="DirectUI\DeviceResources\UiBitmap.cpp" />
+    <ClCompile Include="DirectUI\DeviceResources\UiBitmapBrush.cpp" />
+    <ClCompile Include="DirectUI\DeviceResources\UiSolidColorBrush.cpp" />
+    <ClCompile Include="DirectUI\Renderers\UiHwndRenderer.cpp" />
+    <ClCompile Include="DirectUI\Renderers\UiSwapChainRenderer.cpp" />
+    <ClCompile Include="DirectUI\UiCore.cpp" />
+    <ClCompile Include="DirectUI\UiInputManager.cpp" />
+    <ClCompile Include="DirectUI\UiRenderer.cpp" />
+    <ClCompile Include="DirectUI\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirectUI\Controls\UiButton.h" />
+    <ClInclude Include="DirectUI\Controls\UiColumnDefinition.h" />
+    <ClInclude Include="DirectUI\Controls\UiControl.h" />
+    <ClInclude Include="DirectUI\Controls\UiCoreWindow.h" />
+    <ClInclude Include="DirectUI\Controls\UiDefinitionBase.h" />
+    <ClInclude Include="DirectUI\Controls\UiGrid.h" />
+    <ClInclude Include="DirectUI\Controls\UiGridLength.h" />
+    <ClInclude Include="DirectUI\Controls\UiHwndCoreWindow.h" />
+    <ClInclude Include="DirectUI\Controls\UiLabel.h" />
+    <ClInclude Include="DirectUI\Controls\UiNativeWindowBase.h" />
+    <ClInclude Include="DirectUI\Controls\UiPanel.h" />
+    <ClInclude Include="DirectUI\Controls\UiRowDefinition.h" />
+    <ClInclude Include="DirectUI\Controls\UiSwapChainWindow.h" />
+    <ClInclude Include="DirectUI\Controls\UiTransform.h" />
+    <ClInclude Include="DirectUI\Controls\UiZoomPan.h" />
+    <ClInclude Include="DirectUI\DeviceResources\UiBitmap.h" />
+    <ClInclude Include="DirectUI\DeviceResources\UiBitmapBrush.h" />
+    <ClInclude Include="DirectUI\DeviceResources\UiBrush.h" />
+    <ClInclude Include="DirectUI\DeviceResources\UiDeviceResource.h" />
+    <ClInclude Include="DirectUI\DeviceResources\UiSolidColorBrush.h" />
+    <ClInclude Include="DirectUI\Event.h" />
+    <ClInclude Include="DirectUI\Renderers\UiHwndRenderer.h" />
+    <ClInclude Include="DirectUI\Renderers\UiSwapChainRenderer.h" />
+    <ClInclude Include="DirectUI\Ui.h" />
+    <ClInclude Include="DirectUI\UiAlignment.h" />
+    <ClInclude Include="DirectUI\UiAttachedProperty.h" />
+    <ClInclude Include="DirectUI\UiColor.h" />
+    <ClInclude Include="DirectUI\UiCore.h" />
+    <ClInclude Include="DirectUI\UiD2d.h" />
+    <ClInclude Include="DirectUI\UiInputManager.h" />
+    <ClInclude Include="DirectUI\UiInputMessage.h" />
+    <ClInclude Include="DirectUI\UiLayoutService.h" />
+    <ClInclude Include="DirectUI\UiLength.h" />
+    <ClInclude Include="DirectUI\UiMessage.h" />
+    <ClInclude Include="DirectUI\UiPoint.h" />
+    <ClInclude Include="DirectUI\UiProperties.h" />
+    <ClInclude Include="DirectUI\UiRect.h" />
+    <ClInclude Include="DirectUI\UiRenderer.h" />
+    <ClInclude Include="DirectUI\UiSize.h" />
+    <ClInclude Include="DirectUI\UiTypes.h" />
+    <ClInclude Include="DirectUI\UiValueProperty.h" />
+    <ClInclude Include="DirectUI\Window.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4F5F6B9-9EE8-423B-AE27-C3C7D169B4D4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NativeUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\lmath\lmath</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\lmath\lmath</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\lmath\lmath</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\lmath\lmath</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
